@@ -9,6 +9,7 @@ enum States{
 class Visuals {
     public:
     static void printGameBoard(States theGame[3][3]);
+    static char ToChar(States state);
 };
 
 
