@@ -16,7 +16,8 @@ char Visuals::ToChar(States state)
     }
 }
 
-void Visuals::printGameBoard(States theGame[3][3]) {
+void Visuals::printGameBoard(States theGame[3][3]) 
+{
     {
         for(int p=0;p<19;p++)
             {
