@@ -1,20 +1,7 @@
 #include <iostream>
 #include "Visuals.hpp"
 
-char Visuals::ToChar(States state)
-{
-    switch(state)
-    {
-        case 1:
-        return 'X';
-        break;
-        case -1:
-        return 'O';
-        break;
-        default:
-        return ' ';
-    }
-}
+
 
 void Visuals::printGameBoard(States theGame[3][3]) 
 {
@@ -29,7 +16,7 @@ void Visuals::printGameBoard(States theGame[3][3])
             std::cout<<"|  ";
             for(int j=0;j<3;j++)
             {
-                std::cout<<Visuals::ToChar(theGame[i][j])<<"  |  ";
+                std::cout<<Base::ToChar(theGame[i][j])<<"  |  ";
             }
             std::cout<<std::endl;
             for(int p=0;p<19;p++)
