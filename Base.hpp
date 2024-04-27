@@ -2,7 +2,7 @@
 
 enum States
 {
-    x, o, mt
+    x=-1, o=1, mt=0
 };
 
 #ifndef TICTACTOE_BASE
@@ -11,7 +11,7 @@ enum States
 class Base
 {
     public:
-    static char ToChar(States state);
+    
 };
 
 #endif
