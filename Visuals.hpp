@@ -2,6 +2,7 @@
 #define TICTACTOE_VISUALS_HPP
 
 #include "Base.hpp"
+#include <iostream>
 
 class Visuals
 {

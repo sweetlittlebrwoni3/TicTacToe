@@ -1,4 +1,3 @@
-#include <iostream>
 #include "Visuals.hpp"
 
 char Visuals::toChar(States state , int place)
