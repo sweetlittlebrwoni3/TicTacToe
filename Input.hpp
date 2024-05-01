@@ -8,7 +8,7 @@ class Input
 {
     public:
     static int fromPlayer();
-    static void placeOnGameboard (States theBoard[3][3],int place,States choice);
+    static bool placeOnGameboard (States theBoard[3][3],int place,States choice);
 };
 
 #endif

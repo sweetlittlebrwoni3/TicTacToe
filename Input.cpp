@@ -22,7 +22,7 @@ int Input::fromPlayer()
         std::cout<<"What you entered is not valid"<<std::endl
             <<"Please enter a valid number:"<<std::endl;
         getline(std::cin,entry);
-        
+
         try
         {
             input=std::stoi(entry);
@@ -34,9 +34,17 @@ int Input::fromPlayer()
     return input;
 }
 
-void Input::placeOnGameboard(States theBoard[3][3],int place,States choice)
+bool Input::placeOnGameboard(States theBoard[3][3],int place,States choice)
 {
     int row = (place-1) / 3;
     int col = (place-1) % 3;
-    theBoard[row][col]=choice;
+
+    if(theBoard[row][col]==mt)
+    {
+        theBoard[row][col]=choice;
+        return true;
+    }
+
+    std::cout<<"This spot is occupied!"<<std::endl;
+    return false;
 }

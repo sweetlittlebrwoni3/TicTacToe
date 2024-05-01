@@ -5,13 +5,19 @@
 
 int main()
 {
-    /*
+    
     States theGame[3][3]={x,x,mt,mt,o,o,mt,mt,mt};
-    Rules v1{};
     Visuals v2{};
-    std::cout<<v2.toChar(v1.isWinner(theGame),'0'+2)<<std::endl;
     v2.printGameBoard(theGame);
+    Input v3{};
+
+    v3.placeOnGameboard(theGame,v3.fromPlayer(),x);
+
+    v2.printGameBoard(theGame);
+    /*
+    Rules v1{};
+    std::cout<<v2.toChar(v1.isWinner(theGame),'0'+2)<<std::endl;
     */
-    std::cout<<Input::fromPlayer();
+    //std::cout<<v3.fromPlayer();
     
 }
